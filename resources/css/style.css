@@ -14,3 +14,23 @@ body{
     color: #555; /*text color for entire project*/
 
 }
+.row{
+    max-width: 1100px;
+    margin: 0 auto 0 auto; /*or margin: 0 auto; where top and bottom will 0 and left or right will be auto*/
+}
+header{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* means height of the header will be 100% of view port (full screen)*/
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    margin: 0;
+}
