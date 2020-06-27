@@ -1,36 +1,83 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-    background-color: #fff;
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 20px; /*font size for overall project*/
-    font-weight: 300;
-    text-rendering: optimizeLegibility; /* this will make our font rendering perfect way*/
+html {
+  background-color: #fff;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 20px; /*font size for overall project*/
+  font-weight: 300;
+  text-rendering: optimizeLegibility; /* this will make our font rendering perfect way*/
 }
-body{
-    color: #555; /*text color for entire project*/
+body {
+  color: #555; /*text color for entire project*/
+}
+.row {
+  max-width: 1100px;
+  margin: 0 auto 0 auto; /*or margin: 0 auto; where top and bottom will 0 and left or right will be auto*/
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* means height of the header will be 100% of view port (full screen)*/
+}
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 240%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  margin-bottom: 20px;
+}
 
+.btn:link,
+.btn:visited {
+  display: inline-block; /*button is a tag, so it is a inline element.
+    now making the button both inline and block emelemt, since it is inline element it 
+    will not force the line break, and since it is block element, it  will have padding and margin property*/
+  padding: 10px 30px 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s; /*means when we hover over a btn backgorund, border and text  color will take 0.2s transition time to change the color*/
 }
-.row{
-    max-width: 1100px;
-    margin: 0 auto 0 auto; /*or margin: 0 auto; where top and bottom will 0 and left or right will be auto*/
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
 }
-header{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* means height of the header will be 100% of view port (full screen)*/
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
 }
-.hero-text-box{
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+} 
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;
 }
-h1{
-    margin: 0;
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
 }
+
