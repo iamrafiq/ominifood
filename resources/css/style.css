@@ -13,12 +13,15 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility; /* this will make our font rendering perfect way*/
 }
-.clearfix{zoom:1}
-.clearfix::after{
-  content: '.';
+.clearfix {
+  /*clear fix discuessed in leacture: 16. Building the how-it-works section - Part 2*/
+  zoom: 1;
+}
+.clearfix::after {
+  /*clear fix discuessed in leacture: 16. Building the how-it-works section - Part 2*/
+  content: "";
   clear: both;
-  height:0 ;
-  visibility: hidden;
+  display: table;
 }
 body {
   color: #555; /*text color for entire project*/
@@ -86,13 +89,41 @@ h2::after {
   line-height: 145%;
 }
 /*---------ICONS--------*/
+.icon-small{
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #cf6d17;
+  font-size: 120%;
+  margin-right: 10px;
+  /* secrets 1 to align text and icons
+  line-height: 120%;
+  vertical-align: middle;*/
+  /* secrets 1 to align text and icons is negegetive margin-top*/
+  margin-top: -5px;
+}
 .icon-big {
   font-size: 350%;
   display: block;
   color: #cf6d17;
   margin-bottom: 10px;
 }
+/*--------LINKS------------*/
+a,
+a:link,
+a:visited{
+  color: #cf6d17;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #cf6d17;
+  transition: border-bottom 0.2s color 0.2s;
+}
+a:hover,
+a:active{
+  color:#555;
+  border-bottom: 1px solid transparent;
 
+}
 /*---------BUTTONS--------*/
 
 .btn:link,
@@ -227,7 +258,7 @@ header {
 /*---------------------------------------*/
 /*How it Works*/
 /*---------------------------------------*/
-.section-steps{
+.section-steps {
   background-color: #f4f4f4;
 }
 .steps-box {
@@ -250,7 +281,7 @@ header {
 .works-step {
   margin-bottom: 50px;
 }
-.works-step:last-of-type{
+.works-step:last-of-type {
   margin-bottom: 80px;
 }
 .works-step div {
@@ -266,10 +297,23 @@ header {
   font-size: 150%;
   margin-right: 25px;
 }
-
-
-.btn-app img{
+.btn-app:link,
+.btn-app:visited{
+  border: 0;
+}
+.btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+/*---------------------------------------*/
+/*Cities*/
+/*---------------------------------------*/
+.box img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.city-feature{
+  margin-bottom: 5px;
 }
