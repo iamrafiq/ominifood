@@ -177,3 +177,26 @@ header {
     border-bottom: 2px solid #cf6d17;
   }
 
+/*---------------------------------------*/
+/*MEALS*/
+/*---------------------------------------*/
+
+.meals-showcase{
+  list-style: none;
+  width: 100%; /*100% width of it's parent, it's parent is body and body has width of full browser width*/
+}
+.meals-showcase li{
+  display: block;
+  float: left;
+  width: 25%;
+  height: auto;
+}
+.meal-photo{
+  width: 100%;/*100% width of it's parent, and it's parent is '.meals-showcase li'*/
+  margin: 0;
+}
+
+.meal-photo img{
+  width: 100%;
+  height: auto;
+}
