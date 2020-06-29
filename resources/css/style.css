@@ -169,10 +169,11 @@ a:active{
 /*---------------------------------------*/
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/hero.jpg); /*decreassed opasity to 0.7 to make the background darker and four-ground more highlited*/
+    url(img/hero.jpg); /*decreassed opacity to 0.7 to make the background darker and four-ground more highlited*/
   background-size: cover; /*image will fit to the window*/
   background-position: center;
   height: 100vh; /* means height of the header will be 100% of view port (full screen)*/
+  background-attachment: fixed; /*backgorund will be fixed in its position*/
 }
 .hero-text-box {
   position: absolute;
@@ -316,4 +317,48 @@ header {
 }
 .city-feature{
   margin-bottom: 5px;
+}
+
+
+/*---------------------------------------*/
+/*Testimonials*/
+/*---------------------------------------*/
+.section-testimonials{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./img/back-customers.jpg');
+  background-size: cover;
+  color:#fff; /*all fonts/text color in this section*/
+  background-attachment: fixed; /*background will be fixed in ints postion*/
+}
+
+blockquote{
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative; /*because we set blockquote::before postion is absolute,
+  since blockquote is the parent for blockquote::before so it's position must be 
+  relative*/
+  margin-top: 40px;
+}
+blockquote::before{
+  content: '\201C';
+  font-size: 500%;
+  display: block;
+  position: absolute; /*if we define a item position absolute,
+   its parent must be in relative position, blockquote is the parent for
+   blockquote::before*/
+  top: -5px;
+  left: -3px;
+} 
+cite{
+  display: block;
+  font-size: 90%;
+  margin-top: 25px;
+}
+
+
+cite img{
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
