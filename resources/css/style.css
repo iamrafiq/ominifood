@@ -12,6 +12,7 @@ html {
   font-size: 20px; /*font size for overall project*/
   font-weight: 300;
   text-rendering: optimizeLegibility; /* this will make our font rendering perfect way*/
+  overflow-x: hidden;
 }
 .clearfix {
   /*clear fix discuessed in leacture: 16. Building the how-it-works section - Part 2*/
