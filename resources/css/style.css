@@ -172,6 +172,9 @@ input[type="submit"]:active {
 /*HEADER*/
 /*---------------------------------------*/
 header {
+  /*-webkit- is a hack for the Webkit Browser engine. -webkit-gradient was used in Chrome 4-9 and Safari 4-5. */
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/hero.jpg); /*decreassed opacity to 0.7 to make the background darker and four-ground more highlited*/
   background-size: cover; /*image will fit to the window*/
@@ -370,6 +373,9 @@ header {
 /*Testimonials*/
 /*---------------------------------------*/
 .section-testimonials {
+    /*-webkit- is a hack for the Webkit Browser engine. -webkit-gradient was used in Chrome 4-9 and Safari 4-5. */
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/back-customers.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("./img/back-customers.jpg");
   background-size: cover;
