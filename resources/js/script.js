@@ -94,14 +94,16 @@ $(document).ready(function () {
     {
       offset: "50%",
     }
-  );$(".js--wp-3").waypoint(
+  );
+  $(".js--wp-3").waypoint(
     function (direction) {
       $(".js--wp-3").addClass("fadeIn");
     },
     {
       offset: "50%",
     }
-  );$(".js--wp-4").waypoint(
+  );
+  $(".js--wp-4").waypoint(
     function (direction) {
       $(".js--wp-4").addClass("pulse");
     },
@@ -109,4 +111,20 @@ $(document).ready(function () {
       offset: "50%",
     }
   );
+
+  /*mobile navigation*/
+  $(".js--nav-icon").click(function () {
+    var nav = $(".js--main-nav");
+    var icon = $ ('.js--nav-icon i');// selected i element inside of js--nav-icon class container
+
+    nav.slideToggle(200); //200 mili seconds
+    if(icon.hasClass('ion-navicon-round')){
+      icon.addClass('ion-close-round');
+      icon.removeClass('ion-navicon-round');
+    }else{
+      icon.removeClass('ion-close-round');
+      icon.addClass('ion-navicon-round');
+    }
+   // 
+  });
 });
